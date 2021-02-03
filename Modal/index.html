@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Modal</title>
+  </head>
+  <body>
+    <button class="js-modal-button">Open Modal</button>
+    <div class="modal-wrapper js-modal-wrapper">
+      <!--put the modal-close-area before the modal, so modal will be placed on top of it -->
+      <div class="modal-close-area js-modal-close-area"></div>
+      <div class="modal">
+        <h2 class="modal__headline">Delete the User Modal</h2>
+        <p class="modal__content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+          ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+          Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc
+          ut sem vitae risus tristique posuere.
+        </p>
+        <div class="modal__close-icon js-modal__close-icon">
+          <img src="assets\times-solid.svg" alt="close-icon" />
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="./font/css/solid.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Custom Select Dropdown</title>
+  </head>
+  <body class="main-content">
+    <div class="login-form">
+      <h1 class="login-form__headline">select you choice</h1>
+      <form action="">
+        <div class="input-group">
+          <label for="full-name">Full name</label>
+          <input type="text" name="full-name" id="full-name" />
+        </div>
+        <div class="input-group">
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="select-group">
+          <label for="button">where did you find us?</label>
+          <button class="button" id="button">- please select one-</button>
+          <div class="dropdown u-hidden">
+            <label class="select-item" for="select-internet"
+              >Internet search</label
+            >
+            <input
+              class="option"
+              type="radio"
+              name="where"
+              value="internet"
+              id="select-internet"
+            />
+            <label class="select-item" for="select-family"
+              >Family & friends</label
+            >
+            <input
+              class="option"
+              type="radio"
+              name="where"
+              value="internet"
+              id="select-family"
+            />
+            <label class="select-item" for="select-existing">Existing</label>
+            <input
+              class="option"
+              type="radio"
+              name="where"
+              value="internet"
+              id="select-existing"
+            />
+          </div>
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

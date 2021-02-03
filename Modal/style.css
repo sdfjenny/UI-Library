@@ -1,0 +1,63 @@
+html {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  --bg-color: rgba(51, 51, 51, 0.5);
+}
+
+.modal-wrapper {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+  /* visibility can not be animated, but opacity*/
+  /* if we close it, modal should be hidden after it fades away with opacity 0*/
+  /* if we open it, the animation steps are opacity 0, diplay flex and then opacity 1*/
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.modal-wrapper--active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-close-area {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  background-color: var(--bg-color);
+}
+
+.modal {
+  position: relative;
+  width: 380px;
+  padding: 42px;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+.modal__close-icon {
+  position: absolute;
+  left: auto;
+  top: 0%;
+  width: 20px;
+  right: 0%;
+  bottom: auto;
+  padding: 16px;
+  cursor: pointer;
+  /* reduce the opacity to make it grey*/
+  opacity: 0.3;
+  transition: opacity 200ms ease;
+}
+
+.modal__close-icon:hover {
+  opacity: 0.6;
+}

@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-nav__link-item {
+  color: #f6f7f8;
+  background: #254441;
+  display: flex;
+  height: 64px;
+  font-family: lato;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.4s;
+}
+
+.main-nav__link-item:hover {
+  background: #305753;
+}
+
+.main-nav__link-unordered-list {
+  list-style: none;
+  display: flex;
+}
+
+.main-nav__link-list {
+  /* 100vw will be evenly allocated accrording to the number of first-level nav-buttons  */
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+/*by default the li in submenu will be hidden. */
+.main-nav__submenu-1 .main-nav__link-list {
+  display: none;
+  position: absolute;
+  top: 0px;
+}
+
+.main-nav__submenu-1 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+}
+
+.main-nav__submenu-1 .main-nav__link-list {
+  position: relative;
+}
+
+.main-nav__submenu-2 .main-nav__link-list {
+  display: none;
+}
+
+.main-nav__submenu-2 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 120px;
+}
+
+.arrow {
+  margin-left: 8px;
+  color: #eee;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 72px;
+  font-family: lato;
+}
+
+.main-content {
+  background: #f2f4f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 64px);
+}
+
+.menu-icon {
+  display: none;
+}

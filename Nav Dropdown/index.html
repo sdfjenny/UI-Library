@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav Dropdown</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile-style.css" />
+  </head>
+  <body>
+    <div id="menu-icon" class="menu-icon">Menu</div>
+    <nav id="main-nav" class="main-nav">
+      <ul class="main-nav__link-unordered-list">
+        <li class="main-nav__link-list">
+          <a class="main-nav__link-item" href="#">Home</a>
+        </li>
+        <li class="main-nav__link-list">
+          <a class="main-nav__link-item has-submenu" href="#"
+            >Service
+            <!--hexidecimal HTML entity for arrows-->
+            <span class="arrow">&#x25BC;</span>
+          </a>
+          <ul class="main-nav__link-unordered-list main-nav__submenu-1">
+            <li class="main-nav__link-list">
+              <a class="main-nav__link-item" href="#">Android Dev</a>
+            </li>
+            <li class="main-nav__link-list">
+              <a class="main-nav__link-item" href="#">IOS Dev</a>
+            </li>
+            <li class="main-nav__link-list">
+              <a class="main-nav__link-item has-submenu-2" href="#"
+                >Web Dev<span class="arrow">&#x25B6;</span></a
+              >
+
+              <ul class="main-nav__link-unordered-list main-nav__submenu-2">
+                <li class="main-nav__link-list">
+                  <a class="main-nav__link-item" href="#">Node.js</a>
+                </li>
+                <li class="main-nav__link-list">
+                  <a class="main-nav__link-item" href="#">PHP</a>
+                </li>
+                <li class="main-nav__link-list">
+                  <a class="main-nav__link-item" href="#">Python</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="main-nav__link-list">
+          <a class="main-nav__link-item" href="#">Downloads</a>
+        </li>
+        <li class="main-nav__link-list">
+          <a class="main-nav__link-item has-submenu" href="#"
+            >FAQs
+            <span class="arrow">&#x25BC;</span>
+          </a>
+          <ul class="main-nav__link-unordered-list main-nav__submenu-1">
+            <li class="main-nav__link-list">
+              <a class="main-nav__link-item" href="#">Android</a>
+            </li>
+            <li class="main-nav__link-list">
+              <a class="main-nav__link-item" href="#">IOS</a>
+            </li>
+          </ul>
+        </li>
+        <li class="main-nav__link-list">
+          <a class="main-nav__link-item" href="#">About</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="main-content">
+      <h1>Hi, everyone</h1>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
